@@ -1,0 +1,13 @@
+/* public */
+* {font-family: "Microsoft YaHei";}
+
+/* nav */
+nav {height:52px; background-color:#FBFBFB; border-bottom:1px solid #ccc}
+
+/* hire */
+.hire {padding:10px; background:#EEEEEE;}
+.hire h4 {margin-top:0;}
+.hire p #remain{color:red; font-weight:bold; font-size:16px;}
+/* form */
+form {padding:10px;}
+form button{width:100%;}

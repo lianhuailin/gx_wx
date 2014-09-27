@@ -1,0 +1,54 @@
+
+.
+{
+margin:0px;
+padding:0px;
+border:0px;
+}
+#maintable
+{
+width:100%;
+height:463px;
+border:2px;
+text-align:center;
+}
+td
+{
+background-color:Green;
+
+}
+.style1
+{
+height: 461px;
+width: 901px;
+}
+.style3
+{
+height: 226px;
+width: 128px;
+}
+.style5
+{
+height: 170px;
+width: 128px;
+}
+.style8
+{
+height: 57px;
+width: 128px;
+}
+.style13
+{
+height: 57px;
+width: 129px;
+}
+.style14
+{
+height: 58px;
+width: 128px;
+}
+.style15
+{
+height: 58px;
+width: 129px;
+}
