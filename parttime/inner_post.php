@@ -1,11 +1,11 @@
 <?php
 	include 'conn.php';
 	$batch = $_POST['batch'];
+	$companyname = $_POST['companyname'];
 	$result = mysql_query("SELECT * FROM `db_parttime` WHERE batch = $batch");
 	
 	$flag = 1;
-	while($row = mysql_fetch_row($result)){
-		if($row[2] == 1)
+	while($row = mysql_fetch_row($result)){if($row[2] == 1)
 			$row[2] = "男";
 		else
 			$row[2] = "女";

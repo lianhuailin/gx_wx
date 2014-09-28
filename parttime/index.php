@@ -28,11 +28,12 @@
 	</span>
     </nav>
     <div class="hire">
+    	<span id='companyName'>嘉逸</span><br>
 	    <span id='parttimeInfo'></span>
     	</p>剩余名额：<span id="remain" class='hire'></span>个
     </div>
     <div>
-    	<h7><small>&nbsp;&nbsp;&nbsp;想取消报名或咨询请联系：661680或682231</small></h7><br>
+    	<h7><small>&nbsp;&nbsp;&nbsp;想取消报名或咨询请联系：680601或661680或682231</small></h7><br>
     	<script type="text/javascript">
     		var Request = new Object();
 			Request = GetRequest();
@@ -82,25 +83,29 @@
 	</form>
 	<script type="text/javascript">
     	var Request = new Object();
-			Request = GetRequest();
-			var batch = Request['batch'];
-			switch(batch)
-			{
-				case '3':
-					$("#parttimeInfo").html('五星级皇冠假日酒店招聘服务员兼职.<br>要求：女身高不得低于157，男身高不得低于168。<br>待遇：时薪10块，工资每周二到启航打印店结算，包餐包接送。<br>工作时间：27号（周六）下午18:00~22:00。<br>集中时间：27号下午16:00校门口。');
-					break;
+		Request = GetRequest();
+		var batch = Request['batch'];
+		switch(batch)
+		{
+			case '6':
+				$("#parttimeInfo").html('嘉逸酒店招聘多名服务员传菜员兼职<br>要求：女身高不得低于153，男身高不得低于163。<br>待遇：时薪11块，工资现结，自备零钱。包餐包接送。<br>工作时间：6号早上8:00-14:30，下午17:30-21:30。（不能只做上午或下午）<br>集中时间：6号早上7点校门口。');
+				break;
 
-				case '4':
-					$("#parttimeInfo").html('注意：本次兼职人员已满，报名无效！');
-					break;
+			case '5':
+				$("#parttimeInfo").html('注意：本次兼职人员已满，报名无效！');
+				break;
 
-				case '2':
-					$("#parttimeInfo").html('中国移动现招聘校内业务开通员<br>要求：无。<br>待遇：面议。<br>工作时间：自由分配。<br>集中时间：（现在）9月21号21:30一饭三（培训）.（今天）');
-					break;
+			case '7':
+				$("#parttimeInfo").html('嘉逸酒店招聘多名服务员传菜员兼职<br>要求：女身高不得低于153，男身高不得低于163。<br>待遇：时薪11块，工资现结，自备零钱。包餐包接送。<br>工作时间：7号早上8:00-14:30，下午17:30-21:30。（不能只做上午或下午）<br>集中时间：7号早上7点校门口。');
+				break;
 
-				default:
-					$("#parttimeInfo").html('暂时没有兼职提供！');
-			}
+			case '8':
+				$("#parttimeInfo").html('嘉逸酒店招聘多名服务员传菜员兼职<br>要求：女身高不得低于153，男身高不得低于163。<br>待遇：时薪11块，工资现结，自备零钱。包餐包接送。<br>工作时间：1号早上8:00-14:30，下午17:30-21:30。（不能只做上午或下午）<br>集中时间：1号早上7点校门口。');
+				break;
+
+			default:
+				$("#parttimeInfo").html('暂时没有兼职提供！');
+		}
 
 		//提交表单
 		$.post(
@@ -115,7 +120,7 @@
 			else
 				$(".hire").html("<h3 style=\"color:red; text-align:center\">数据库连接出错</h3><p style=\"color:#5CB85C; text-align:center\">请尝试<b>刷新</b>或<b>联系工作人员</b></p>");
 			}
-			);
+		);
 		$("#signUp").click(function(){
 			if (dataOK()){
 				$('#signUp').button('loading');
@@ -129,15 +134,14 @@
 						"tele"  : $("#tele").val(),
 						"class" : $("#class").val(),
 						"ps": $("#ps").val(),
-						"batch" : batch   //-----------------------------------------------批次修改------------------
+						"batch" : batch
 					},
 					function(data){
 						if (data == "SUCCESS"){
 							$("#signUp").button('reset');
 							$("#signUp").html("提交成功！");
 							window.location.href="success.php?batch="+batch;
-						}else{
-
+						} else {
 						}
 					}
 				);
