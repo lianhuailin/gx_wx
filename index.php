@@ -103,9 +103,13 @@ class wechatCallbackapiTest
                     if(PARTTIME)
                         $contentStr = "点击此链接进行报名：
                                         \n/:,@f/:,@f/:,@f/:,@f/:,@f
-                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=4'>皇冠假日酒店服务员兼职4</a>";
+                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=6'>嘉逸酒店国庆兼职六号</a>
+                                        \n/:,@f/:,@f/:,@f/:,@f/:,@f
+                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=7'>嘉逸酒店国庆兼职七号</a>
+                                        \n/:,@f/:,@f/:,@f/:,@f/:,@f
+                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=8'>嘉逸酒店国庆兼职一号</a>";
                     else
-                        $contentStr = "抱歉，本次兼职招聘人数已满。若有兼职提供，我们会第一时间发布信息！";
+                        $contentStr = "国庆1、6、7号还有兼职名额，将在今天下午发布信息！";
                     break;
 
                 case '功能':
@@ -172,7 +176,13 @@ class wechatCallbackapiTest
                     break;
 				
                 case '内部at工学':
-                    $contentStr = "内部通道：<a href=\"218.244.133.27/wx/parttime/index.php?batch=4\">兼职报名界面</a><a href=\"218.244.133.27/wx/parttime/inner.php?batch=4\">查看报名成功人员信息</a>";
+                    $contentStr = "点击此链接进行报名：
+                                        \n/:,@f/:,@f/:,@f/:,@f/:,@f
+                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=6'>嘉逸酒店国庆兼职六号</a>
+                                        \n/:,@f/:,@f/:,@f/:,@f/:,@f
+                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=7'>嘉逸酒店国庆兼职七号</a>
+                                        \n/:,@f/:,@f/:,@f/:,@f/:,@f
+                                        \n<a href='218.244.133.27/wx/parttime/index.php?batch=8'>嘉逸酒店国庆兼职一号</a>";
                     break;
 
                 default: 
